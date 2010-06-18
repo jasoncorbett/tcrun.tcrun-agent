@@ -1,0 +1,24 @@
+<assembly>
+    <!--id>tcrun-agent</id-->
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <unpack>true</unpack>
+      <scope>runtime</scope>
+      <outputDirectory>/</outputDirectory>
+    </dependencySet>
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <directory>jar/target/classes</directory>
+      <outputDirectory/>
+    </fileSet>
+    <fileSet>
+        <directory>war/target/tcrun-agent-war-1.0-SNAPSHOT</directory>
+        <outputDirectory />
+    </fileSet>
+  </fileSets>
+</assembly>
